@@ -16,9 +16,8 @@
   *
   ******************************************************************************
   */
-
-#include "Led.hpp"
-#include "timer.hpp"
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -99,8 +98,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-Delay mssss ;
-mssss.Delay_ms_Block(1000);
+
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -121,12 +119,8 @@ mssss.Delay_ms_Block(1000);
   MX_RTC_Init();
   MX_TIM21_Init();
   MX_TIM2_Init();
-
   /* USER CODE BEGIN 2 */
-  Delay d1 ;
-  d1.Delay_ms_NonBlock(1000);
-  Led l1(Led_Coler::Red_Led) ;
-  l1.led_turnON();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
